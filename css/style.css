@@ -1,0 +1,260 @@
+/* reseteo css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+h1 {
+    height: 150px;
+    text-align: center;
+
+}
+
+
+.menu__barraNavegacion__items a, .menu__vitrina a, .footer__redes a, .footer_contactos a {
+    text-decoration: none;
+    color: rgb(250, 249, 249);
+}
+
+
+ul, ol {
+    list-style: none;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+
+.menu__barraNavegacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.menu__logoPrincipal {
+    width: 150px;
+    height: 150px;    
+}
+
+.menu {
+    background: #152131; 
+    padding: 1rem;
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: stretch; 
+    grid-area: menu;
+}
+
+.menu__barraNavegacion__items {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+
+.menu__vitrina {
+    padding-right: 20px;
+}
+
+
+@media (hover: hover) {
+    a:hover {
+        color: crimson;
+    }
+}
+
+.menu__buscar {
+    display: flex;
+    height: 20px;
+    justify-content: space-around;
+}
+
+
+/* cuerpo de la pagina index*/
+
+#carouselExampleInterval {
+    width: 100%;
+    
+}
+
+
+h2 {
+    text-align: center;
+    height: 10vh;
+}
+
+/* ========Servicios======== */
+.servicios {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.servicios__tarjeta {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .2)
+}
+
+/* =========Como llegar============ */
+
+.comollegar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.4fr 0.4fr 0.4fr;
+    grid-template-areas: 
+    "img mapa"
+    "img mapa"
+    "tex imgp";
+    gap: 10px;
+}
+
+.comollegar img {
+    grid-area: img;
+}
+
+.comollegar iframe {
+    width: 100%;
+    height: 42vh;
+    grid-area: mapa;
+}
+
+.comollegar p {
+    text-align: center;
+    grid-area: tex;
+}
+
+.comollegar__imagepeque {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    grid-area: imgp;
+    gap: 10px;
+}
+
+.comollegar__imagepeque img {
+    width: 200px;
+    height: 200px;
+}
+
+
+/* ==========footer========== */
+
+footer {
+    background: #152131; 
+    /* padding: 1rem; */
+    display: flex;
+    justify-content: space-between;
+    /* align-items: stretch; */
+    grid-area: footer;
+}
+
+.logoFooter {
+    width: 180px;
+    height: 180px;    
+}
+
+.mapafooter {
+    width: 200px;
+    height: 200px;
+}
+
+/* ==========Quienes somos========== */
+
+.quienesomos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.quienesomos__h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.quienesomos__h1 h1 {
+    color: #152131;
+    background-color: white;   
+}
+
+
+.quienesomos__tarjeta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    text-align: justify;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+    gap: 10px;
+}
+
+/* ============vehículos============== */
+
+.vehiculos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.vehiculos__navegador {
+    display: flex;
+    justify-content: center;
+}
+
+.vehiculos__navegador a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 30px;
+    color: #152131;
+    /* border: solid black 5px; */
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+}
+
+.vehiculos__tarjeta {
+    width: 350px;
+    height: 500px;
+    background-color: rgba(95, 158, 160, 0.219);
+    display: grid;
+    border: solid black; 
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+    text-align: center;
+}
+
+/* ==============taxis================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
