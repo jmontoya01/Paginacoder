@@ -40,52 +40,158 @@
     </header>
     
     <main>
-        <section>
-            <h1>Vitrina virtual</h1>
+
+        <h1>Vitrina virtual</h1>
+        <section class="menuvitrina">
             <nav>
-                <ul>
+                <ul class="menuvitrina__menu">
                     <!-- la linea de particulares es un posible ejemplo de como crear la barra de navecación para que seleccione la clase deseada, me imagino que es con JS  -->
-                    <li><a href="class-Particulares">Particulares</a></li> 
-                    <li>Camiones</li>
-                    <li>Motocicletas</li>
-                    <li>Taxis</li>
+                    <li><a href="">Particulares</a></li> 
+                    <li><a href="">Camiones</a></li>
+                    <li><a href="">Motocicletas</a></li>
+                    <li><a href="">Taxis</a></li>
                 </ul>
             </nav>
-            <form action="">
+            <form action="" class="menuvitrina__buscar">
                 <input type="search" placeholder="Buscar...">
                 <button>Buscar</button>
             </form>
         </section>
         <!-- en cada sección iran todos los carros disponibles de acuerdo a su clase como en el ejemplo de las Toyotas en vehículos -->
-        <section>
-            <h2>Particulares</h2> 
-            <article class="Particulares">
-                <img src="" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, minus sint autem exercitationem accusantium, esse adipisci repudiandae suscipit ratione sit accusamus. Accusantium quaerat sequi aperiam commodi? Atque quas assumenda commodi.</p>
+        
+        <h2>Particulares</h2>
+         
+        <section class="vitrina__particulares">
+            
+            <article class="vehiculos__tarjeta">
+                <img src="../img/chevrolet.jpg" alt="">
+                <h3>marca</h3>
+                <h3>modelo</h3>
+                <h4>descripcion</h4>
+                <button>Reservar</button>
+            </article>
+            <article class="vehiculos__tarjeta">
+                <img src="../img/mazda.jpg" alt="">
+                <h3>marca</h3>
+                <h3>modelo</h3>
+                <h4>descripcion</h4>
+                <button>Reservar</button>
+            </article>
+            <article class="vehiculos__tarjeta">
+                <img src="../img/renault.jpg" alt="">
+                <h3>marca</h3>
+                <h3>modelo</h3>
+                <h4>descripcion</h4>
+                <button>Reservar</button>
+            </article>
+            <article class="vehiculos__tarjeta">
+                <img src="../img/toyota.jpg" alt="">
+                <h3>marca</h3>
+                <h3>modelo</h3>
+                <h4>descripcion</h4>
                 <button>Reservar</button>
             </article>
         </section>
-        <section>
-            <h2>Camiones</h2>
-            <article class="Camiones">
-                <img src="" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, minus sint autem exercitationem accusantium, esse adipisci repudiandae suscipit ratione sit accusamus. Accusantium quaerat sequi aperiam commodi? Atque quas assumenda commodi.</p>
+
+        <h2>Camiones</h2>
+
+        <section class="vitrina__camiones">
+
+            <article class="vehiculos__tarjeta">
+                <img src="../img/camiones.jpg" alt="">
+                <h3>marca</h3>
+                <h3>modelo</h3>
+                <h4>descripcion</h4>
+                <button>Reservar</button>
+            </article>
+            <article class="vehiculos__tarjeta">
+                <img src="../img/camiones.jpg" alt="">
+                <h3>marca</h3>
+                <h3>modelo</h3>
+                <h4>descripcion</h4>
+                <button>Reservar</button>
+            </article>
+            <article class="vehiculos__tarjeta">
+                <img src="../img/camiones.jpg" alt="">
+                <h3>marca</h3>
+                <h3>modelo</h3>
+                <h4>descripcion</h4>
+                <button>Reservar</button>
+            </article>
+            <article class="vehiculos__tarjeta">
+                <img src="../img/camiones.jpg" alt="">
+                <h3>marca</h3>
+                <h3>modelo</h3>
+                <h4>descripcion</h4>
+                <button>Reservar</button>
+            </article>
+
+        </section>
+
+        <h2>Motocicletas</h2>
+
+        <section class="vitrina__motocicletas">
+
+            <article class="vehiculos__tarjeta">
+                <img src="../img/motobmw.jpg" alt="">
+                <h3>marca</h3>
+                <h3>modelo</h3>
+                <h4>descripcion</h4>
+                <button>Reservar</button>
+            </article>
+            <article class="vehiculos__tarjeta">
+                <img src="../img/motocicletas.jpg" alt="">
+                <h3>marca</h3>
+                <h3>modelo</h3>
+                <h4>descripcion</h4>
+                <button>Reservar</button>
+            </article>
+            <article class="vehiculos__tarjeta">
+                <img src="../img/motoktm.jpg" alt="">
+                <h3>marca</h3>
+                <h3>modelo</h3>
+                <h4>descripcion</h4>
+                <button>Reservar</button>
+            </article>
+            <article class="vehiculos__tarjeta">
+                <img src="../img/motomt.jpg" alt="">
+                <h3>marca</h3>
+                <h3>modelo</h3>
+                <h4>descripcion</h4>
                 <button>Reservar</button>
             </article>
         </section>
-        <section>
-            <h2>Motocicletas</h2> 
-            <article class="Motocicletas">
-                <img src="" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, minus sint autem exercitationem accusantium, esse adipisci repudiandae suscipit ratione sit accusamus. Accusantium quaerat sequi aperiam commodi? Atque quas assumenda commodi.</p>
+
+        <h2>Taxis</h2> 
+
+        <section class="vitrina__taxis">
+
+            <article class="vehiculos__tarjeta">
+                <img src="../img/taxigran.jpg" alt="">
+                <h3>marca</h3>
+                <h3>modelo</h3>
+                <h4>descripcion</h4>
                 <button>Reservar</button>
             </article>
-        </section>
-        <section>
-            <h2>Taxis</h2> 
-            <article class="Taxis">
-                <img src="" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, minus sint autem exercitationem accusantium, esse adipisci repudiandae suscipit ratione sit accusamus. Accusantium quaerat sequi aperiam commodi? Atque quas assumenda commodi.</p>
+            <article class="vehiculos__tarjeta">
+                <img src="../img/taxikia.jpg" alt="">
+                <h3>marca</h3>
+                <h3>modelo</h3>
+                <h4>descripcion</h4>
+                <button>Reservar</button>
+            </article>
+            <article class="vehiculos__tarjeta">
+                <img src="../img/taxirines.jpg" alt="">
+                <h3>marca</h3>
+                <h3>modelo</h3>
+                <h4>descripcion</h4>
+                <button>Reservar</button>
+            </article>
+            <article class="vehiculos__tarjeta">
+                <img src="../img/taxipicanto.jpg" alt="">
+                <h3>marca</h3>
+                <h3>modelo</h3>
+                <h4>descripcion</h4>
                 <button>Reservar</button>
             </article>
         </section>
