@@ -27,6 +27,12 @@ ul, ol {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
 
 img {
     max-width: 100%;
@@ -38,50 +44,25 @@ p {
     text-align: justify;
 }
 
-
-.menu__barraNavegacion {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.menu__logoPrincipal {
-    width: 150px;
-    height: 150px;    
+.navbar-brand {
+    width: 100px;
+    height: 100px;
 }
 
-.menu {
-    background: #152131; 
-    padding: 1rem;
-    display: flex;
-    align-content: stretch;
-    justify-content: space-between;
-    align-items: stretch; 
-    grid-area: menu;
+.bg-nav {
+    background-color: #152131;
 }
 
-.menu__barraNavegacion__items {
-    width: 500px;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
+.bg-icon, .navbar-toggler {
+    background-color: white;
 }
 
-
-.menu__vitrina {
-    padding-right: 20px;
-}
 
 
 @media (hover: hover) {
     a:hover {
         color: crimson;
     }
-}
-
-.menu__buscar {
-    display: flex;
-    height: 20px;
-    justify-content: space-around;
 }
 
 
@@ -102,7 +83,8 @@ h2 {
 .servicios {
     display: flex;
     justify-content: space-around;
-    gap: 10px;
+    gap: 20px;
+    
 }
 
 .servicios__tarjeta {
@@ -129,7 +111,10 @@ h2 {
 
 .comollegar img {
     grid-area: img;
+
 }
+
+
 
 .comollegar iframe {
     width: 100%;
@@ -138,7 +123,7 @@ h2 {
 }
 
 .comollegar p {
-    text-align: center;
+    text-align:justify;
     grid-area: tex;
 }
 
@@ -146,7 +131,7 @@ h2 {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 200px;
+    height: 2vh;
     grid-area: imgp;
     gap: 10px;
 }
@@ -287,12 +272,88 @@ footer {
     
 }
 
-.vitrina__particulares, .vitrina__camiones, .vitrina__motocicletas, .vitrina__taxis {
+.vitrina__particulares, 
+.vitrina__camiones, 
+.vitrina__motocicletas, 
+.vitrina__taxis {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
+
+/* ===========responsive index y quienes somos===================== */
+
+/* adaptacion 300px a 600px index */
+
+@media (min-width: 300px) and (max-width: 600px) {
+
+    .servicios {
+        
+        display: grid;
+        
+    }
+
+    h2 {
+        padding: 10px;
+    }
+
+    .comollegar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comollegar__imagepeque {
+        display: none;
+    }
+    .footer {
+        width: 100%; 
+    }
+
+    .mapafooter {
+        display: none;
+    }
+
+    .logoFooter {
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+/* adaptacion 600px a 800px index */
+
+@media (min-width: 600px) and (max-width: 800px) {
+
+    .comollegar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comollegar__imagepeque {
+        display: none;
+    }
+
+}
+
+@media (min-width: 300px) and (max-width: 1200px) {
+
+    /* adaptacion quienes somos */
+
+    .quienesomos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quienesomos__tarjeta {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+
 
 
 
