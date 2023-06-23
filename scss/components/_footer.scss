@@ -1,0 +1,20 @@
+/* ==========footer========== */
+
+footer {
+    background: #152131; 
+    /* padding: 1rem; */
+    display: flex;
+    justify-content: space-between;
+    /* align-items: stretch; */
+    grid-area: footer;
+}
+
+.logoFooter {
+    width: 180px;
+    height: 180px;    
+}
+
+.mapafooter {
+    width: 200px;
+    height: 200px;
+}

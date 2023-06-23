@@ -1,0 +1,22 @@
+/* ============vehículos============== */
+
+.vehiculos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.vehiculos__navegador {
+    display: flex;
+    justify-content: center;
+}
+
+.vehiculos__navegador a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 30px;
+    color: #152131;
+    /* border: solid black 5px; */
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+}

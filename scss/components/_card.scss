@@ -1,0 +1,37 @@
+.servicios__tarjeta {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .2)
+}
+
+.quienesomos__tarjeta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    text-align: justify;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+    gap: 10px;
+}
+
+.vehiculos__tarjeta {
+    width: 350px;
+    height: 500px;
+    background-color: rgba(95, 158, 160, 0.219);
+    display: grid;
+    border: solid black; 
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+    text-align: center;
+}
+
+.containertaxis__tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+}

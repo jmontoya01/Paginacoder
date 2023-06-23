@@ -1,0 +1,59 @@
+h2 {
+    text-align: center;
+    height: 10vh;
+}
+
+/* ========Servicios======== */
+.servicios {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    
+}
+
+/* =========Como llegar============ */
+
+.comollegar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.4fr 0.4fr 0.4fr;
+    grid-template-areas: 
+    "img mapa"
+    "img mapa"
+    "tex imgp";
+    gap: 10px;
+}
+
+.comollegar img {
+    grid-area: img;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+.comollegar iframe {
+    width: 100%;
+    height: 42vh;
+    grid-area: mapa;
+}
+
+.comollegar p {
+    text-align: justify;
+    grid-area: tex;
+}
+
+.comollegar__imagepeque {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 2vh;
+    grid-area: imgp;
+    gap: 10px;
+}
+
+.comollegar__imagepeque img {
+    width: 200px;
+    height: 200px;
+}
