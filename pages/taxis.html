@@ -71,14 +71,18 @@
     
     <main>
             <h1>Taxis</h1>
-            <nav class="containertaxis">
-                <ul class="containertaxis__menu">
-                    <li><a href="">Coopebombas</a></li>
-                    <li><a href="">Tax super</a></li>
-                    <li><a href="">Tax Andalus</a></li>
-                    <li><a href="">Tax Individual</a></li>
-                </ul>
-            </nav>
+            <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group me-2" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-outline-secondary">Coopebombas</button>
+                    <button type="button" class="btn btn-outline-secondary">Taxis y cupos</button>
+                    <button type="button" class="btn btn-outline-secondary">Tax individual</button>
+                    <button type="button" class="btn btn-outline-secondary">Tax super</button>
+                </div>
+                <div class="input-group">
+                    <div class="input-group-text" id="btnGroupAddon"></div>
+                    <input type="text" class="form-control" placeholder="Buscar..." aria-label="Input group example" aria-describedby="btnGroupAddon">
+                </div>
+            </div>
 
         <!-- en cada artículo iran todos los vehículos disponibles de esa clase, pero solo se mostraran los seleccionador por el navegador de empresas como se ve en el moqups -->
         <span><h2>Coopebombas</h2></span>

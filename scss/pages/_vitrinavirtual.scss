@@ -4,19 +4,29 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-}
-
-.menuvitrina__menu {
-    display: flex;
-    gap: 30px;
-}
-
-.menuvitrina__menu a {
-    text-decoration: none;
-    font-size: 2rem;
-    border: solid black;
-    background-color: #152131;
     
+    &__menu {
+        
+        display: flex;
+        gap: 30px;
+        :hover {
+            background-color: #152131;
+            color: aliceblue;
+            border-radius: 20px;
+        }
+
+        & a {
+            text-decoration: none;
+            padding: 10px;
+            font-size: 30px;
+            color: #152131;
+            /* border: solid black 5px; */
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+            border-radius: 20px;
+            
+            
+        }
+    }
 }
 
 .vitrina__particulares, 
@@ -28,3 +38,14 @@
     flex-wrap: wrap;
     gap: 20px;
 }
+
+@media (min-width: 300px) and (max-width: 768px) {
+    .menuvitrina__buscar {
+        display: none;
+    }
+
+    .menuvitrina__menu {
+        display: grid;
+    }
+}
+

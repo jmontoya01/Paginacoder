@@ -106,6 +106,7 @@ footer {
   /* padding: 1rem; */
   display: flex;
   justify-content: space-between;
+  width: 100%;
   /* align-items: stretch; */
   grid-area: footer;
 }
@@ -116,7 +117,7 @@ footer {
 }
 
 .mapafooter {
-  width: 200px;
+  width: 25vw;
   height: 200px;
 }
 
@@ -140,24 +141,19 @@ h2 {
   grid-template-areas: "img mapa" "img mapa" "tex imgp";
   gap: 10px;
 }
-
 .comollegar img {
   grid-area: img;
-  height: 100%;
-  width: 100%;
+  object-fit: cover;
 }
-
 .comollegar iframe {
   width: 100%;
   height: 42vh;
   grid-area: mapa;
 }
-
 .comollegar p {
   text-align: justify;
   grid-area: tex;
 }
-
 .comollegar__imagepeque {
   display: flex;
   justify-content: center;
@@ -166,12 +162,47 @@ h2 {
   grid-area: imgp;
   gap: 10px;
 }
-
 .comollegar__imagepeque img {
   width: 200px;
   height: 200px;
 }
 
+/* adaptacion 300px a 600px index */
+@media (min-width: 300px) and (max-width: 600px) {
+  .servicios {
+    display: grid;
+  }
+  h2 {
+    padding: 10px;
+  }
+  .comollegar {
+    display: flex;
+    flex-direction: column;
+  }
+  .comollegar__imagepeque {
+    display: none;
+  }
+  .footer {
+    width: 100%;
+  }
+  .mapafooter {
+    display: none;
+  }
+  .logoFooter {
+    width: 150px;
+    height: 150px;
+  }
+}
+/* adaptacion 600px a 800px index */
+@media (min-width: 600px) and (max-width: 800px) {
+  .comollegar {
+    display: flex;
+    flex-direction: column;
+  }
+  .comollegar__imagepeque {
+    display: none;
+  }
+}
 /* ==========Quienes somos========== */
 .quienesomos {
   display: flex;
@@ -184,19 +215,28 @@ h2 {
   font-size: 1.5rem;
   text-align: justify;
 }
-
-.quienesomos__h1 h1 {
+.quienesomos__h1 .quienesomos__h1 h1 {
   color: #152131;
   background-color: white;
 }
 
+@media (min-width: 300px) and (max-width: 768px) {
+  /* adaptacion quienes somos */
+  .quienesomos {
+    display: flex;
+    flex-direction: column;
+  }
+  .quienesomos__tarjeta {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /* ==============taxis================== */
 .containertaxis__menu {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-
 .containertaxis__menu a {
   text-decoration: none;
   font-size: 2rem;
@@ -204,6 +244,24 @@ h2 {
   background-color: #152131;
 }
 
+.btn-toolbar {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-toolbar .btn-group {
+  background-color: #FFD93D;
+  box-shadow: 2px 2px 2px 2px;
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .btn-toolbar {
+    display: grid;
+  }
+  .btn-toolbar .btn-group {
+    display: grid;
+  }
+}
 /* ============vehículos============== */
 .vehiculos {
   display: flex;
@@ -211,12 +269,16 @@ h2 {
   justify-content: center;
   gap: 30px;
 }
-
 .vehiculos__navegador {
   display: flex;
   justify-content: center;
+  gap: 1vw;
 }
-
+.vehiculos__navegador :hover {
+  background-color: #152131;
+  color: aliceblue;
+  border-radius: 20px;
+}
 .vehiculos__navegador a {
   text-decoration: none;
   padding: 10px;
@@ -224,25 +286,38 @@ h2 {
   color: #152131;
   /* border: solid black 5px; */
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
 }
 
+@media (min-width: 300px) and (max-width: 600px) {
+  .vehiculos__navegador {
+    display: grid;
+    gap: 2.5vh;
+  }
+}
 /* ============vitrina virtual=========== */
 .menuvitrina {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-
 .menuvitrina__menu {
   display: flex;
   gap: 30px;
 }
-
+.menuvitrina__menu :hover {
+  background-color: #152131;
+  color: aliceblue;
+  border-radius: 20px;
+}
 .menuvitrina__menu a {
   text-decoration: none;
-  font-size: 2rem;
-  border: solid black;
-  background-color: #152131;
+  padding: 10px;
+  font-size: 30px;
+  color: #152131;
+  /* border: solid black 5px; */
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
 }
 
 .vitrina__particulares,
@@ -255,4 +330,13 @@ h2 {
   gap: 20px;
 }
 
-/*# sourceMappingURL=styles.css.map */
+@media (min-width: 300px) and (max-width: 768px) {
+  .menuvitrina__buscar {
+    display: none;
+  }
+  .menuvitrina__menu {
+    display: grid;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
