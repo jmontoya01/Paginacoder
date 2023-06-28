@@ -5,6 +5,7 @@ h2 {
 
 /* ========Servicios======== */
 .servicios {
+    padding: 3vw;
     display: flex;
     justify-content: space-around;
     gap: 20px;
@@ -14,6 +15,7 @@ h2 {
 /* =========Como llegar============ */
 
 .comollegar {
+    padding: 3vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.4fr 0.4fr 0.4fr;

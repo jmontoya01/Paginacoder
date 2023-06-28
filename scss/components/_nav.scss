@@ -1,5 +1,6 @@
 /* =========barra navegacion======= */
 
+
 .navbar-brand {
     width: 100px;
     height: 100px;
@@ -11,4 +12,8 @@
 
 .bg-icon, .navbar-toggler {
     background-color: white;
+}
+
+.nav-item {
+    padding: 1vw;
 }
