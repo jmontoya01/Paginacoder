@@ -26,6 +26,7 @@ h2 {
     gap: 10px;
 
     & img {
+        height: 100%;
         grid-area: img;
         object-fit: cover;
     
@@ -38,6 +39,7 @@ h2 {
     }
 
     & p {
+        height: 100%;
         text-align: justify;
         grid-area: tex;
     }
