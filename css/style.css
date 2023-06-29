@@ -46,6 +46,10 @@ p {
   }
 }
 /* =========barra navegacion======= */
+.navbar {
+  border-bottom: 800x;
+}
+
 .navbar-brand {
   width: 100px;
   height: 100px;
@@ -104,10 +108,9 @@ p {
 .vehiculos__tarjeta {
   width: 350px;
   height: 500px;
-  background-color: rgba(95, 158, 160, 0.219);
+  background-image: radial-gradient(circle, rgba(44, 65, 71, 0.349), rgba(52, 220, 226, 0.295));
   display: grid;
-  border: solid black;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
   text-align: center;
   transition: 1s all ease-out;
 }
@@ -231,7 +234,8 @@ h2 {
 }
 /* ==========Quienes somos========== */
 .quienesomos {
-  padding: 3vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
   display: flex;
   flex-direction: column;
   text-align: center;

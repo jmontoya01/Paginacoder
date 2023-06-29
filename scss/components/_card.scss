@@ -30,10 +30,10 @@
 .vehiculos__tarjeta {
     width: 350px;
     height: 500px;
-    background-color: rgba(95, 158, 160, 0.219);
-    display: grid;
-    border: solid black; 
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+    background-image: 
+    radial-gradient(circle, rgba(44, 65, 71, 0.349), rgba(52, 220, 226, 0.295));
+    display: grid; 
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, .2);
     text-align: center;
     transition: 1s all ease-out;
     
