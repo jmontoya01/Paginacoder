@@ -1,4 +1,6 @@
-#carouselExampleInterval {
-    width: 100%;
+
+.carousel-item img {
     
+    object-fit: contain;
+    height: 80vh;
 }
