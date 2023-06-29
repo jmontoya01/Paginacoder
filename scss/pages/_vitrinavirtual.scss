@@ -18,7 +18,7 @@
         & a {
             text-decoration: none;
             padding: 10px;
-            font-size: 30px;
+            font-size: 3vw;
             color: #152131;
             /* border: solid black 5px; */
             box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
@@ -42,10 +42,15 @@
 @media (min-width: 300px) and (max-width: 768px) {
     .menuvitrina__buscar {
         display: none;
+
     }
 
     .menuvitrina__menu {
         display: grid;
     }
+
+
 }
+
+
 

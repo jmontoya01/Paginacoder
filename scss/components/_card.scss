@@ -46,7 +46,15 @@
     &:hover {
         transform: scale(1.06);
     }
+
+    & button {
+        background-color: rgba(4, 97, 236, 0.123);
+        font-size: 2rem;
+        border-radius: 15px;
+        transform: scale(0.8);
+    }
 }
+
 
 .containertaxis__tarjetas {
     display: flex;
