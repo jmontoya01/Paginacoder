@@ -87,6 +87,10 @@ p {
   flex-direction: column;
   border-radius: 2px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  transition: 1s all ease-out;
+}
+.servicios__tarjeta:hover {
+  transform: scale(1.06);
 }
 
 .quienesomos__tarjeta {
