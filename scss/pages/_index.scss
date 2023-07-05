@@ -1,6 +1,18 @@
+.h1salvautos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 h2 {
     text-align: center;
     height: 10vh;
+}
+
+body {
+    background-color: aliceblue;
 }
 
 /* ========Servicios======== */
@@ -9,6 +21,12 @@ h2 {
     display: flex;
     justify-content: space-around;
     gap: 20px;
+
+    & p {
+        font: 1.7em sans-serif;
+        text-align: center;
+        
+    }
     
 }
 

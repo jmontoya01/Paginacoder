@@ -81,6 +81,7 @@ p {
 }
 
 .servicios__tarjeta {
+  background-color: rgba(168, 219, 219, 0.199);
   padding: 2vw;
   width: 100%;
   display: flex;
@@ -88,7 +89,7 @@ p {
   flex-direction: column;
   border-radius: 2px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
-  transition: 1s all ease-out;
+  transition: 1s all;
 }
 .servicios__tarjeta:hover {
   transform: scale(1.06);
@@ -128,6 +129,10 @@ p {
   border-radius: 15px;
   transform: scale(0.8);
 }
+.vehiculos__tarjeta button:hover {
+  background-color: darkslategray;
+  color: aliceblue;
+}
 
 .containertaxis__tarjetas {
   display: flex;
@@ -157,9 +162,20 @@ footer {
   height: 200px;
 }
 
+.h1salvautos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 h2 {
   text-align: center;
   height: 10vh;
+}
+
+body {
+  background-color: aliceblue;
 }
 
 /* ========Servicios======== */
@@ -168,6 +184,10 @@ h2 {
   display: flex;
   justify-content: space-around;
   gap: 20px;
+}
+.servicios p {
+  font: 1.7em sans-serif;
+  text-align: center;
 }
 
 /* =========Como llegar============ */
@@ -343,10 +363,12 @@ h2 {
   display: flex;
   gap: 30px;
 }
-.menuvitrina__menu :hover {
-  background-color: #152131;
-  color: aliceblue;
-  border-radius: 20px;
+@media (min-width: 768px) {
+  .menuvitrina__menu :hover {
+    background-color: #152131;
+    color: aliceblue;
+    border-radius: 20px;
+  }
 }
 .menuvitrina__menu a {
   text-decoration: none;

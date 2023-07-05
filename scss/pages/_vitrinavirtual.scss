@@ -9,11 +9,18 @@
         
         display: flex;
         gap: 30px;
-        :hover {
-            background-color: #152131;
-            color: aliceblue;
-            border-radius: 20px;
+        
+        
+        @media (min-width: 768px ){
+            :hover {
+                background-color: #152131;
+                color: aliceblue;
+                border-radius: 20px;
+                
+            }
+
         }
+        
 
         & a {
             text-decoration: none;
