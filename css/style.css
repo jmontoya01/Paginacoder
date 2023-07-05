@@ -332,10 +332,12 @@ body {
   justify-content: center;
   gap: 1vw;
 }
-.vehiculos__navegador :hover {
-  background-color: #152131;
-  color: aliceblue;
-  border-radius: 20px;
+@media (min-width: 768px) {
+  .vehiculos__navegador :hover {
+    background-color: #152131;
+    color: aliceblue;
+    border-radius: 20px;
+  }
 }
 .vehiculos__navegador a {
   text-decoration: none;
