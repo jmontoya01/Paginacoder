@@ -144,11 +144,10 @@ p {
 /* ==========footer========== */
 footer {
   background: #152131;
-  /* padding: 1rem; */
+  margin-top: 100px;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  /* align-items: stretch; */
   grid-area: footer;
 }
 
