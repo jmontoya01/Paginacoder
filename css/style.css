@@ -48,6 +48,7 @@ p {
 /* =========barra navegacion======= */
 .navbar {
   border-bottom: 800x;
+  margin-bottom: 50px;
 }
 
 .navbar-brand {
@@ -97,6 +98,7 @@ p {
 
 .quienesomos__tarjeta {
   padding: 2vw;
+  margin-bottom: 5vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-radius: 1.5px;
@@ -108,7 +110,7 @@ p {
   transition: 1s all ease-out;
 }
 .quienesomos__tarjeta:hover {
-  transform: scale(1.06);
+  transform: scale(1.04);
 }
 
 .vehiculos__tarjeta {
@@ -327,6 +329,7 @@ body {
   gap: 30px;
 }
 .vehiculos__navegador {
+  margin-bottom: 5vh;
   display: flex;
   justify-content: center;
   gap: 1vw;
@@ -356,6 +359,7 @@ body {
 }
 /* ============vitrina virtual=========== */
 .menuvitrina {
+  margin-bottom: 5vh;
   display: flex;
   justify-content: center;
   gap: 20px;

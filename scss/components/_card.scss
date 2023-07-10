@@ -17,6 +17,7 @@
 
 .quienesomos__tarjeta {
     padding: 2vw;
+    margin-bottom: 5vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-radius: 1.5px;
@@ -28,7 +29,7 @@
     transition: 1s all ease-out;
     
     &:hover {
-        transform: scale(1.06);
+        transform: scale(1.04);
         
 
     }
