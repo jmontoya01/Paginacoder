@@ -46,6 +46,10 @@ p {
   }
 }
 /* =========barra navegacion======= */
+.navbar {
+  margin-bottom: 30px;
+}
+
 .navbar-brand {
   width: 100px;
   height: 100px;
@@ -191,7 +195,6 @@ body {
   padding: 3vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.4fr 0.4fr 0.4fr;
   grid-template-areas: "img mapa" "img mapa" "tex imgp";
   gap: 10px;
 }
@@ -317,12 +320,11 @@ body {
   }
 }
 /* ============vehículos============== */
-.vehiculos {
-  display: flex;
-  flex-wrap: wrap;
+.vehiculos__main {
+  display: grid;
   justify-content: center;
-  gap: 30px;
 }
+
 .vehiculos__navegador {
   margin-bottom: 5vh;
   display: flex;
@@ -350,6 +352,79 @@ body {
   .vehiculos__navegador {
     display: grid;
     gap: 2.5vh;
+  }
+}
+.vehiculos__presentacion {
+  margin-bottom: 100px;
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-areas: "imgrande imguno imgdos" "imgrande imgtres imgcuatro" "descrip descrip descrip";
+  gap: 10px;
+}
+.vehiculos__presentacion__imgrande {
+  grid-area: imgrande;
+  object-fit: contain;
+}
+.vehiculos__presentacion__imguno {
+  grid-area: imguno;
+  object-fit: contain;
+}
+.vehiculos__presentacion__imgdos {
+  grid-area: imgdos;
+  object-fit: contain;
+}
+.vehiculos__presentacion__imgtres {
+  grid-area: imgtres;
+  object-fit: contain;
+}
+.vehiculos__presentacion__imgcuatro {
+  grid-area: imgcuatro;
+  object-fit: contain;
+}
+.vehiculos__presentacion__caracteristicas {
+  grid-area: descrip;
+}
+
+@media (max-width: 1200px) {
+  .vehiculos__presentacion {
+    width: 800px;
+  }
+}
+@media (max-width: 768px) {
+  .vehiculos__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .vehiculos__presentacion {
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "imgrande imgrande" "imguno imgtres" "descrip descrip";
+  }
+  .vehiculos__presentacion__imgrande {
+    grid-area: imgrande;
+    object-fit: contain;
+  }
+  .vehiculos__presentacion__imguno {
+    grid-area: imguno;
+    object-fit: contain;
+  }
+  .vehiculos__presentacion__imgdos {
+    grid-area: imgdos;
+    display: none;
+  }
+  .vehiculos__presentacion__imgtres {
+    grid-area: imgtres;
+    object-fit: contain;
+  }
+  .vehiculos__presentacion__imgcuatro {
+    grid-area: imgcuatro;
+    display: none;
+  }
+  .vehiculos__presentacion__caracteristicas {
+    grid-area: descrip;
   }
 }
 /* ============vitrina virtual=========== */

@@ -1,12 +1,11 @@
 /* ============vehículos============== */
 
-.vehiculos {
-    display: flex;
-    flex-wrap: wrap;
+.vehiculos__main {
+    display: grid;
     justify-content: center;
-    gap: 30px;
+}
 
-    &__navegador {
+.vehiculos__navegador {
         margin-bottom: 5vh;
         display: flex;
         justify-content: center;
@@ -33,7 +32,7 @@
             
         }
     }
-}
+
 
 @media (min-width: 300px) and (max-width: 600px) {
 
@@ -46,4 +45,103 @@
 
 }
 
+.vehiculos__presentacion {
+    margin-bottom: 100px;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: 
+    "imgrande imguno imgdos"
+    "imgrande imgtres imgcuatro"
+    "descrip descrip descrip";
+    gap: 10px;
+    
+    &__imgrande {
+        
+        grid-area: imgrande;
+        object-fit:contain;
+    }
 
+    &__imguno {
+        grid-area: imguno;
+        object-fit: contain;
+    }
+
+    &__imgdos {
+        grid-area: imgdos;
+        object-fit: contain;
+    }
+
+    &__imgtres {
+        grid-area: imgtres;
+        object-fit: contain;
+    }
+
+    &__imgcuatro {
+        grid-area: imgcuatro;
+        object-fit: contain;
+    }
+
+    &__caracteristicas {
+        grid-area: descrip;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .vehiculos__presentacion{
+        width:800px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .vehiculos__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .vehiculos__presentacion{
+        width: 70vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "imgrande imgrande"
+        "imguno imgtres"
+        "descrip descrip";
+
+        &__imgrande {
+        
+            grid-area: imgrande;
+            object-fit:contain;
+        }
+    
+        &__imguno {
+            grid-area: imguno;
+            object-fit: contain;
+        }
+    
+        &__imgdos {
+            grid-area: imgdos;
+            display: none;
+        }
+    
+        &__imgtres {
+            grid-area: imgtres;
+            object-fit: contain;
+        }
+    
+        &__imgcuatro {
+            grid-area: imgcuatro;
+            display: none;
+        }
+    
+        &__caracteristicas {
+            grid-area: descrip;
+        }    
+        
+    }
+
+}
