@@ -3,7 +3,7 @@
 .menuvitrina {
     margin-bottom: 5vh;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     gap: 20px;
     
     &__menu {
@@ -35,6 +35,48 @@
             
         }
     }
+
+    &__buscar{
+        position: absolute;
+        padding: 5px;
+        translate: 480px ;
+
+        & input {
+            width: 0px;
+            height: 40px;
+            padding: 0 20px;
+            font-size: 18px;
+            color: $color;
+            outline: none;
+            border: 1px solid aliceblue;
+            border-radius: 30px;
+            transition: all 0.6s ease;
+        }
+
+        &__btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: $color;
+            width: 55px;
+            height: 55px;
+            line-height: 55px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        &:hover input {
+            width: 240px;
+        }
+
+        & input:focus {
+            width: 240px;
+        }
+        
+    }
 }
 
 .vitrinavirtual__h2 {
@@ -51,18 +93,20 @@
     gap: 20px;
 }
 
-@media (min-width: 300px) and (max-width: 768px) {
+@media (min-width: 300px) and (max-width: 1020px) {
     .menuvitrina__buscar {
-        display: none;
-
+        translate: 0 -80px;
     }
+}
 
+@media (min-width: 300px) and (max-width: 768px) {
     .menuvitrina__menu {
         display: grid;
     }
-
-
 }
+
+   
+
 
 
 

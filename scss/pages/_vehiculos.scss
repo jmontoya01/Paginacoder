@@ -5,6 +5,11 @@
     justify-content: center;
 }
 
+.vehiculos__menu {
+    display: flex;
+    justify-content: space-around;
+}
+
 .vehiculos__navegador {
         margin-bottom: 5vh;
         display: flex;
@@ -49,6 +54,7 @@
     margin-bottom: 100px;
     width: 1200px;
     display: grid;
+    text-align: center;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-areas: 
     "imgrande imguno imgdos"
@@ -84,6 +90,25 @@
 
     &__caracteristicas {
         grid-area: descrip;
+    }
+
+    &__button {
+        font-size: 1.5em;
+        background-color:aliceblue;
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+        color: $color;
+        
+    }
+
+}
+
+@media (min-width: 768px ){
+    .vehiculos__presentacion__button:hover {
+        background-color: $color;
+        color: aliceblue;
+        
     }
 
 }
