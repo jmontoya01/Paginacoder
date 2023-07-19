@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Nos dedicamos a la compra y venta de taxis nuevos y usados, tambien manejamos cupos de las mejores empresas en la ciudad de Medellín">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -46,138 +47,88 @@
 
     </header>
     
-    <main>
+    <main class="containertaxis">
 
-        <h1>Taxis</h1>
-        <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
-            <div class="btn-group me-2" role="group" aria-label="First group">
-                <button type="button" class="btn btn-outline-secondary">Coopebombas</button>
-                <button type="button" class="btn btn-outline-secondary">Taxis y cupos</button>
-                <button type="button" class="btn btn-outline-secondary">Tax individual</button>
-                <button type="button" class="btn btn-outline-secondary">Tax super</button>
+        <div class="containertaxis__h1"><h1>Taxis</h1></div>
+        <nav class="containertaxis__nav">
+            <div class="containertaxis__btn">
+                <a href=""><i class="fa-solid fa-taxi" style="color: #ffd43b;"></i></a>
+                <h2>Coopebomas</h2>
             </div>
-            <div class="input-group">
-                <div class="input-group-text" id="btnGroupAddon"></div>
-                <input type="text" class="form-control" placeholder="Buscar..." aria-label="Input group example" aria-describedby="btnGroupAddon">
+            <div class="containertaxis__btn">
+                <a href=""><i class="fa-solid fa-taxi" style="color: #ffd43b;"></i></a>
+                <h2>Tax Individual</h2>
             </div>
-        </div>
-
-        <!-- en cada artículo iran todos los vehículos disponibles de esa clase, pero solo se mostraran los seleccionador por el navegador de empresas como se ve en el moqups -->
-        <span><h2>Coopebombas</h2></span>
+            <div class="containertaxis__btn">
+                <a href=""><i class="fa-solid fa-taxi" style="color: #ffd43b;"></i></a>
+                <h2>Tax Super</h2>
+            </div>
+            <div class="containertaxis__btn">
+                <a href=""><i class="fa-solid fa-taxi" style="color: #ffd43b;"></i></a>
+                <h2>Cootrasmede</h2>
+            </div>
+        </nav>
         
-        <section class="containertaxis__tarjetas">
+        <section class="containertaxis__vehiculos">
+                
+                <div class="containertaxis__tarjetas">
+                    <a href=""><img src="../img/taxihyundai.jpg" alt="taxi amarillo gran i10" loading="lazy"></a>
+                    <hr>
+                    <h2>Hyundai i10</h2>
+                    <hr>
+                    <h3>Modelo 2015</h3>
+                    <hr>
+                    <h3>Empresa de transporte Coopebombas</h3>
+                    <hr>
+                    <p>
+                        El vehiculo cuenta con Gps incluido, llantas nuevas Michelin, seguro contra todo reisgo, seguros obligatorios y mantenimientos con descuento por parte de Coopebombas.
+                    </p>
+                </div>
 
-            <article class="vehiculos__tarjeta">
-                <img src="../img/taxikia.jpg" alt="taxi kia" loading="lazy">
-                <h3>marca</h3>
-                <h3>modelo</h3>
-                <h4>descripcion</h4>
-                <button>Reservar</button>
-            </article>
-            
-            <article class="vehiculos__tarjeta">
-                <img src="../img/taxipicanto.jpg" alt="taxi picanto" loading="lazy">
-                <h3>marca</h3>
-                <h3>modelo</h3>
-                <h4>descripcion</h4>
-                <button>Reservar</button>
-            </article>
+                <div class="containertaxis__tarjetas">
+                    <a href=""><img src="../img/taxipicanto.jpg" alt="taxi amarillo picanto" loading="lazy"></a>
+                    <hr>
+                    <h2>Kia Picanto</h2>
+                    <hr>
+                    <h3>Modelo 2017</h3>
+                    <hr>
+                    <h3>Empresa de transporte Tax Super</h3>
+                    <hr>
+                    <P>
+                        Vehículo en excelente estado, cuenta con aire acondicionado, dirección electro asistida, motor 1250cc, llantas nuevas listo para trabajar.
+                    </P>
+                </div>
 
-            <article class="vehiculos__tarjeta">
-                <img src="../img/taxirines.jpg" alt="taxi con rines" loading="lazy">
-                <h3>marca</h3>
-                <h3>modelo</h3>
-                <h4>descripcion</h4>
-                <button>Reservar</button>
-            </article>
-            <article class="vehiculos__tarjeta">
-                <img src="../img/taxigran.jpg" alt="taxi gran i10" loading="lazy">
-                <h3>marca</h3>
-                <h3>modelo</h3>
-                <h4>descripcion</h4>
-                <button>Reservar</button>
-            </article>
-            <article class="vehiculos__tarjeta">
-                <img src="../img/taxikia.jpg" alt="taxi kia" loading="lazy">
-                <h3>marca</h3>
-                <h3>modelo</h3>
-                <h4>descripcion</h4>
-                <button>Reservar</button>
-            </article>
-            
-            <article class="vehiculos__tarjeta">
-                <img src="../img/taxipicanto.jpg" alt="taxi picanto" loading="lazy">
-                <h3>marca</h3>
-                <h3>modelo</h3>
-                <h4>descripcion</h4>
-                <button>Reservar</button>
-            </article>
+                <div class="containertaxis__tarjetas">
+                    <a href=""><img src="../img/taxirines.jpg" alt="taxi amarillo kia con rines de lujo" loading="lazy"></a>
+                    <hr>
+                    <h2>Kia Picanto</h2>
+                    <hr>
+                    <h3>Modelo 2018</h3>
+                    <hr>
+                    <h3>Empresa de transporte Cootrasmede</h3>
+                    <hr>
+                    <p>
+                        Kia picanto en excelente estado, la version full del mercado con aire acondicionado, dirección electro asistida, rines de lujo, documentación al día.
+                    </p>
+                </div>
 
-            <article class="vehiculos__tarjeta">
-                <img src="../img/taxirines.jpg" alt="taxi rines bonitos" loading="lazy">
-                <h3>marca</h3>
-                <h3>modelo</h3>
-                <h4>descripcion</h4>
-                <button>Reservar</button>
-            </article>
-            <article class="vehiculos__tarjeta">
-                <img src="../img/taxigran.jpg" alt="taxi gran i10" loading="lazy">
-                <h3>marca</h3>
-                <h3>modelo</h3>
-                <h4>descripcion</h4>
-                <button>Reservar</button>
-            </article>
-            <article class="vehiculos__tarjeta">
-                <img src="../img/taxikia.jpg" alt="taxi kia" loading="lazy">
-                <h3>marca</h3>
-                <h3>modelo</h3>
-                <h4>descripcion</h4>
-                <button>Reservar</button>
-            </article>
-            
-            <article class="vehiculos__tarjeta">
-                <img src="../img/taxirines.jpg" alt="taxi rines" loading="lazy">
-                <h3>marca</h3>
-                <h3>modelo</h3>
-                <h4>descripcion</h4>
-                <button>Reservar</button>
-            </article>
-            <article class="vehiculos__tarjeta">
-                <img src="../img/taxigran.jpg" alt="taxi gran i10" loading="lazy">
-                <h3>marca</h3>
-                <h3>modelo</h3>
-                <h4>descripcion</h4>
-                <button>Reservar</button>
-            </article>
-            <article class="vehiculos__tarjeta">
-                <img src="../img/taxirines.jpg" alt="taxi con rines" loading="lazy">
-                <h3>marca</h3>
-                <h3>modelo</h3>
-                <h4>descripcion</h4>
-                <button>Reservar</button>
-            </article>
-            <article class="vehiculos__tarjeta">
-                <img src="../img/taxigran.jpg" alt="taxi gran i10" loading="lazy">
-                <h3>marca</h3>
-                <h3>modelo</h3>
-                <h4>descripcion</h4>
-                <button>Reservar</button>
-            </article>
-            <article class="vehiculos__tarjeta">
-                <img src="../img/taxirines.jpg" alt="taxi rines" loading="lazy">
-                <h3>marca</h3>
-                <h3>modelo</h3>
-                <h4>descripcion</h4>
-                <button>Reservar</button>
-            </article>
-            <article class="vehiculos__tarjeta">
-                <img src="../img/taxirines.jpg" alt="taxi con rines" loading="lazy">
-                <h3>marca</h3>
-                <h3>modelo</h3>
-                <h4>descripcion</h4>
-                <button>Reservar</button>
-            </article>
-            
+                <div class="containertaxis__tarjetas">
+                    <a href=""><img src="../img/taxi.jpg" alt="taxi amarillo kia con rines de lujo" loading="lazy"></a>
+                    <hr>
+                    <h2>Hyundai gran i10</h2>
+                    <hr>
+                    <h3>Modelo 2023</h3>
+                    <hr>
+                    <h3>Empresa de transporte Tax Individual</h3>
+                    <hr>
+                    <p>
+                        Vehículo totalmente nuevo 0km, version full equipada con comandos en la cabrilla, aire acondicionado, dirección electro asistida, motor 1250cc, documentacion al día, se entrega en la empresa de trasporte Tax individual.
+                    </p>
+                </div>
+
+
+
 
 
         </section>

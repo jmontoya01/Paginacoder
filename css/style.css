@@ -135,10 +135,10 @@ p {
 }
 
 .containertaxis__tarjetas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+  box-shadow: -3px -3px 3px 3px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  height: 900px;
+  padding: 10px;
 }
 
 /* ==========footer========== */
@@ -288,34 +288,73 @@ body {
   }
 }
 /* ==============taxis================== */
-.containertaxis__menu {
+.containertaxis {
   display: flex;
-  justify-content: center;
   gap: 10px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-areas: " tax tax " "nav card";
 }
-.containertaxis__menu a {
-  text-decoration: none;
-  font-size: 2rem;
-  border: solid black;
-  background-color: #152131;
+.containertaxis__h1 {
+  grid-area: tax;
 }
-
-.btn-toolbar {
+.containertaxis__nav {
+  position: fixed;
+}
+.containertaxis__btn {
+  margin-left: 50px;
+  text-align: center;
+  font-size: 30px;
+  width: 400px;
+  height: 100px;
+  background-color: aliceblue;
+  border: 2px solid black;
+  border-radius: 50px;
+  margin-bottom: 50px;
+  grid-area: nav;
+}
+@media (min-width: 768px) {
+  .containertaxis__btn:hover {
+    background-color: #152131;
+    color: aliceblue;
+    border-radius: 50px;
+  }
+}
+.containertaxis__vehiculos {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  grid-area: card;
+  gap: 20px;
 }
 
-.btn-toolbar .btn-group {
-  background-color: #FFD93D;
-  box-shadow: 2px 2px 2px 2px;
-}
-
-@media (min-width: 300px) and (max-width: 768px) {
-  .btn-toolbar {
-    display: grid;
+@media (max-width: 1200px) {
+  .containertaxis__btn {
+    width: 300px;
   }
-  .btn-toolbar .btn-group {
-    display: grid;
+  .containertaxis__tarjetas {
+    width: 300px;
+    height: 850px;
+  }
+}
+@media (max-width: 1024px) {
+  .containertaxis__btn {
+    width: 200px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .containertaxis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .containertaxis__nav {
+    display: flex;
+    flex-direction: column;
+    position: inherit;
+    width: 300px;
   }
 }
 /* ============vehículos============== */
@@ -469,7 +508,6 @@ body {
   padding: 10px;
   font-size: 30px;
   color: #152131;
-  /* border: solid black 5px; */
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
 }
