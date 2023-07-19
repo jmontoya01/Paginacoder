@@ -135,10 +135,15 @@ p {
 }
 
 .containertaxis__tarjetas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   box-shadow: -3px -3px 3px 3px rgba(0, 0, 0, 0.2);
   width: 500px;
   height: 900px;
   padding: 10px;
+  grid-area: card;
+  text-align: center;
 }
 
 /* ==========footer========== */
@@ -327,6 +332,9 @@ body {
   grid-area: card;
   gap: 20px;
 }
+.containertaxis__tarjetas__button {
+  text-align: end;
+}
 
 @media (max-width: 1200px) {
   .containertaxis__btn {
@@ -429,8 +437,9 @@ body {
 .vehiculos__presentacion__caracteristicas {
   grid-area: descrip;
 }
-.vehiculos__presentacion__button {
+.vehiculos__presentacion__button, .containertaxis__tarjetas__button {
   font-size: 1.5em;
+  border: 2px solid black;
   background-color: aliceblue;
   width: 200px;
   height: 50px;
@@ -439,7 +448,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .vehiculos__presentacion__button:hover {
+  .vehiculos__presentacion__button:hover, .containertaxis__tarjetas__button:hover {
     background-color: #152131;
     color: aliceblue;
   }

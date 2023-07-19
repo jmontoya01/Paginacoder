@@ -52,6 +52,10 @@
         gap: 20px;
     } 
     
+    &__tarjetas__button {
+        @extend .vehiculos__presentacion__button;
+        text-align: end;
+    }
     
 }
 
