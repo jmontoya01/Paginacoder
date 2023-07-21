@@ -306,6 +306,9 @@ body {
 .containertaxis__nav {
   position: fixed;
 }
+.containertaxis__nav a {
+  color: #152131;
+}
 .containertaxis__btn {
   margin-left: 50px;
   text-align: center;
@@ -323,6 +326,9 @@ body {
     background-color: #152131;
     color: aliceblue;
     border-radius: 50px;
+  }
+  .containertaxis__btn:hover a {
+    color: aliceblue;
   }
 }
 .containertaxis__vehiculos {
