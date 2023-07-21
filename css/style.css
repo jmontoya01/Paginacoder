@@ -333,7 +333,7 @@ body {
   gap: 20px;
 }
 .containertaxis__tarjetas__button {
-  text-align: end;
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
@@ -342,7 +342,7 @@ body {
   }
   .containertaxis__tarjetas {
     width: 300px;
-    height: 850px;
+    height: 910px;
   }
 }
 @media (max-width: 1024px) {
